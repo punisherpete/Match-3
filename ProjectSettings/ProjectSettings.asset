@@ -668,9 +668,9 @@ PlayerSettings:
   webGLDecompressionFallback: 1
   scriptingDefineSymbols:
     : FACEBOOK;GAMESPARKS;UNITY_INAPPS
-    Android: UNITY_INAPPS
-    Windows Store Apps: GOOGLE_MOBILE_ADS
-    iPhone: UNITY_INAPPS
+    Android: 
+    Windows Store Apps: 
+    iPhone: 
   additionalCompilerArguments: {}
   platformArchitecture:
     iPhone: 1
