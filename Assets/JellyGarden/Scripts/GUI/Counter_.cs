@@ -2,10 +2,11 @@
 using System.Collections;
 using JellyGarden.Scripts.Targets;
 using UnityEngine.UI;
+using TMPro;
 
 public class Counter_ : MonoBehaviour
 {
-	Text txt;
+	private TMP_Text txt;
 	private float lastTime;
 	bool alert;
 
@@ -15,7 +16,7 @@ public class Counter_ : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		txt = GetComponent<Text> ();
+		txt = GetComponent<TMP_Text> ();
 	}
 
 	void OnEnable ()
