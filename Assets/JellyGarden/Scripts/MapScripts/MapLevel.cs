@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class MapLevel : MonoBehaviour
+public class MapLevel : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerDownHandler, IPointerExitHandler
 {
     private Vector3 _originalScale;
     private bool _isScaled;
@@ -104,5 +105,32 @@ public class MapLevel : MonoBehaviour
     {
         StarsHoster.gameObject.SetActive(starsType == StarsType.Separated);
         SolidStarsHoster.gameObject.SetActive(starsType == StarsType.Solid);
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (LevelsMap.GetIsClickEnabled())
+        {
+            ResetScale();
+            LevelsMap.OnLevelSelected(Number);
+        }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (LevelsMap.GetIsClickEnabled())
+            Scale(OverScale);
+    }
+
+    void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
+    {
+        if (LevelsMap.GetIsClickEnabled())
+            Scale(ClickScale);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (LevelsMap.GetIsClickEnabled())
+            ResetScale();
     }
 }
