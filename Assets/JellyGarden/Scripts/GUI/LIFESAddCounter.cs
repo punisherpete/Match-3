@@ -2,11 +2,10 @@
 using System.Collections;
 using System;
 using UnityEngine.UI;
-using TMPro;
 
 public class LIFESAddCounter : MonoBehaviour
 {
-    private TMP_Text text;
+    Text text;
     static float TimeLeft;
     float TotalTimeForRestLife = 15f * 60;  //8 minutes for restore life
     bool startTimer;
@@ -14,7 +13,7 @@ public class LIFESAddCounter : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        text = GetComponent<TMP_Text>();
+        text = GetComponent<Text>();
         TotalTimeForRestLife = InitScript.Instance.TotalTimeForRestLifeHours * 60 * 60 + InitScript.Instance.TotalTimeForRestLifeMin * 60 + InitScript.Instance.TotalTimeForRestLifeSec;
         //if (TotalTimeForRestLife != InitScript.RestLifeTimer) //1.4
         //{
