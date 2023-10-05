@@ -156,7 +156,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.candysmith.jellygarden
-    Standalone: unity.DefaultCompany.JellyGarden
+    Standalone: com.DefaultCompany.My-project
     Tizen: com.best2dgamesstudio.jellygarden
     iPhone: com.best2dgamesstudio.jellygarden
     tvOS: com.best2dgamesstudio.jellygarden
