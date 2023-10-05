@@ -17768,6 +17768,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 3}
+      propertyPath: m_Name
+      value: LevelsMap
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -17800,29 +17804,17 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 22492570, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 3}
-      propertyPath: m_Pivot.x
+    - target: {fileID: 400000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 22492570, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 3}
-      propertyPath: m_Pivot.y
+    - target: {fileID: 400000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 22492570, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 22492570, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 22492570, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 37.899902
-      objectReference: {fileID: 0}
-    - target: {fileID: 22492570, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 18
+    - target: {fileID: 400000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 3}
