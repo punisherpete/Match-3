@@ -142,7 +142,6 @@ public class InitScript : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        Application.targetFrameRate = 60;
         Instance = this;
         RestLifeTimer = PlayerPrefs.GetFloat("RestLifeTimer");
         DateOfExit = PlayerPrefs.GetString("DateOfExit", "");
@@ -187,6 +186,10 @@ public class InitScript : MonoBehaviour
         {
             item.gameObject.SetActive(false);
         }
+
+#if UNITY_EDITOR
+        lifes = 5;
+#endif
     }
 
     void Update()

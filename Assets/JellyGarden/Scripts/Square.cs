@@ -39,7 +39,9 @@ public class Square : MonoBehaviour
         // GenItem();
         if (row == LevelManager.THIS.maxRows - 1)
         {
-            if (LevelManager.THIS.target == Target.INGREDIENT && (LevelManager.THIS.ingrTarget[0] == Ingredients.Ingredient1 || LevelManager.THIS.ingrTarget[1] == Ingredients.Ingredient1 || LevelManager.THIS.ingrTarget[0] == Ingredients.Ingredient2 || LevelManager.THIS.ingrTarget[1] == Ingredients.Ingredient2))
+            if (LevelManager.THIS.target == Target.INGREDIENT && (LevelManager.THIS.ingrTarget[0] == Ingredients.Ingredient1 
+                                                                  || LevelManager.THIS.ingrTarget[1] == Ingredients.Ingredient1 || LevelManager.THIS.ingrTarget[0] == Ingredients.Ingredient2 
+                                                                  || LevelManager.THIS.ingrTarget[1] == Ingredients.Ingredient2))
             {
                 GameObject obj = Instantiate(Resources.Load("Prefabs/arrow_ingredients")) as GameObject;
                 obj.transform.SetParent(transform);
@@ -54,7 +56,7 @@ public class Square : MonoBehaviour
         if (IsNone() && !CanGoInto())
             return null;
         GameObject item = Instantiate(LevelManager.THIS.itemPrefab) as GameObject;
-        item.transform.localScale = Vector2.one * 0.6f;
+        // item.transform.localScale = new Vector2(0.5f, 0.5f);
         item.GetComponent<Item>().square = this;
         //if (!falling)
         //    item.GetComponent<Item>().anim.SetTrigger("reAppear");
